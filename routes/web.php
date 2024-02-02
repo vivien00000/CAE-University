@@ -27,4 +27,4 @@ Route::get('/login', function () {
     return view('login');
 })->name('login');
 
-Route::post('/login', [App\Http\Controllers\Auth\LoginController::class, 'login']);
+// Route::post('/login', [App\Http\Controllers\Auth\LoginController::class, 'login']);
