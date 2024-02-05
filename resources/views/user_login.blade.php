@@ -26,7 +26,7 @@
                       </div>
                       <div class="form-group">
                           <button type="submit">Login</button>
-                          <a href="#">Register now!</a>
+                          <a href="#">Forgot Password!</a>
                       </div>
                   </form>
                   <div id="message" class="message"></div>
