@@ -1,0 +1,56 @@
+.container {
+    text-align: center;
+    padding-left: 10%;
+}
+
+/* Styling for card titles */
+.card-title {
+    color: #333;
+    font-size: 24px;
+}
+
+/* Styling for card text */
+.card-text {
+    color: #666;
+    font-size: 16px;
+}
+
+/* Styling for card buttons */
+.btn {
+    background-color: #007bff;
+    color: #fff;
+    text-decoration: none;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    font-size: 18px;
+    cursor: pointer;
+}
+
+.btn:hover {
+    background-color: #0056b3;
+}
+
+/* Styling for card images */
+.card-img-top,
+.card-img-bottom {
+    border-radius: 5px 5px 0 0;
+}
+
+/* Additional card styles */
+.card {
+    margin-bottom: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: box-shadow 0.3s ease;
+}
+
+.card:hover {
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+#href {
+    color: black;
+}
+
+#card_container {
+    margin-top: 6%;
+}

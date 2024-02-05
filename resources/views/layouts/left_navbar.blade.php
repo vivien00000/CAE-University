@@ -15,17 +15,19 @@
 </div>
 
 <!-- Main Content -->
+
 <div class="main" id="mainContent">
     <div class="sidenav" id="mySidenav">
-        <a href="#dashboard"> <img src="img/dashboard.png" alt="Dashboard icon" width="25%"> Dashboard</a>
-        <a href="#assignments"> <img src="img/homework.png" alt="assignment icon" width="25%">Assignments</a>
-        <a href="#activities"><img src="img/Assignment.png" alt="Activity icon" width="25%">Activities</a>
-        <a href="#grades"> <img src="img/grades.png" alt="grades icon" width="25%">Grades</a>
-        <a href="#schedule"><img src="img/schedule.png" alt="schedule icon" width="25%">Schedule</a>
-        <a href="#inbox"><img src="img/inbox.png" alt="inbox icon" width="25%">Inbox</a>
-        <a href="#help"><img src="img/help.png" alt="Help icon" width="25%">Help</a>
+        <a href="#dashboard"> <img src="img/dashboard.png" alt="Dashboard icon" width="22%"> Dashboard</a>
+        <a href="#assignments"> <img src="img/assignment.png" alt="assignment icon" width="22%">Assignments</a>
+        <a href="#activities"><img src="img/activity.png" alt="Activity icon" width="22%">Activities</a>
+        <a href="#grades"> <img src="img/grades.png" alt="grades icon" width="22%">Grades</a>
+        <a href="#schedule"><img src="img/calendar.png" alt="schedule icon" width="22%">Schedule</a>
+        <a href="#inbox"><img src="img/inbox.png" alt="inbox icon" width="22%">Inbox</a>
+        <a href="#help"><img src="img/help.png" alt="Help icon" width="22%">Help</a>
     </div>
 </div>
+
 
 
 <style>
