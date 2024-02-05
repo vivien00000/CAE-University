@@ -1,0 +1,104 @@
+body {
+    font-family: "Roboto", Helvetica, Arial, Lucida, sans-serif;
+}
+#first_nav {
+    color: white;
+    padding: 0px;
+    margin: 0px;
+    padding-left: 30px;
+}
+
+#color_nav {
+    background-color: maroon;
+}
+#top_email {
+    color: white;
+    margin-left: 50px;
+}
+#call {
+    width: 25px;
+    margin-top: 0px;
+    font-family: "Open Sans", Arial, sans-serif;
+}
+#mail {
+    width: 25px;
+    margin-right: 10px;
+    font-family: "Open Sans", Arial, sans-serif;
+}
+#icons {
+    padding-bottom: 5px;
+    padding-right: 50px;
+}
+#second_nav {
+    background-color: white;
+    font-size: 20px;
+    padding-bottom: 0px;
+}
+#logo {
+    width: 200px;
+    padding: 15px 0px 30px 35px;
+}
+#navbarNavDropdown {
+    display: flex;
+    justify-content: right;
+    padding: 30px 10px 20px 0px;
+}
+.nav-item {
+    padding-right: 20px;
+}
+#carouselExampleCaptions {
+    background-image: url(https://www.ama.edu.ph/wp-content/uploads/2017/05/AMA_Univ_slide_01.jpg);
+}
+#about_section {
+    background-color: maroon;
+}
+#about_section2 {
+    color: azure;
+    text-align: center;
+    padding: 70px 70px;
+}
+.carousel {
+    padding: 100px;
+}
+#programs {
+    background-color: gray;
+}
+#news {
+    background-image: url(https://www.ama.edu.ph/wp-content/uploads/2019/11/CHED-Grants-Autonomous-Status-to-AMA-bg1.jpg);
+    width: 100%;
+    padding: 0%;
+    margin: 0%;
+}
+#preregister {
+    padding: 0%;
+    margin: 0%;
+}
+.carousel-indicators {
+    transform: translateY(100px);
+}
+.carou_text {
+    transform: translateY(-110px) translateX(255px);
+}
+.carou_text2 {
+    transform: translateY(-140px) translateX(295px);
+}
+.buttons {
+    padding: 8px 25px;
+    border-radius: 50px;
+    border: 1px solid #ffffff;
+    color: white;
+    background-color: rgba(255, 255, 255, 0.073);
+    transform: translateY(-110px) translateX(160px);
+    font-size: 25px;
+}
+.buttons:hover {
+    padding-top: 10px;
+    padding-left: 20px;
+    padding-right: 20px;
+    border-radius: 50px;
+    border: 0px solid #ffffff;
+    color: white;
+    background-color: rgba(255, 255, 255, 0.1);
+    transform: translateY(-110px) translateX(160px);
+    font-size: 25px;
+}

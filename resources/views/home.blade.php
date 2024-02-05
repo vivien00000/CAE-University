@@ -1,248 +1,97 @@
 <!DOCTYPE html>
 <html lang="en">
     <head>
-        <meta charset="UTF-8" />
-        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <link
-            rel="stylesheet"
-            href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css"
-        />
-        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
-        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"></script>
+        @include('layouts/bootstap')
+        <link rel="stylesheet" href="css/home.css">
         <title>Home</title>
         <style>
-            body {
-                font-family: "Roboto", Helvetica, Arial, Lucida, sans-serif;
-            }
-            #first_nav {
-                color: white;
-                padding: 0px;
-                margin: 0px;
-                padding-left: 30px;
-            }
-
-            #color_nav {
-                background-color: maroon;
-            }
-            #top_email {
-                color: white;
-                margin-left: 50px;
-            }
-            #call {
-                width: 25px;
-                margin-top: 0px;
-                font-family: "Open Sans", Arial, sans-serif;
-            }
-            #mail {
-                width: 25px;
-                margin-right: 10px;
-                font-family: "Open Sans", Arial, sans-serif;
-            }
-            #icons {
-                padding-bottom: 5px;
-                padding-right: 50px;
-            }
-            #second_nav {
-                background-color: white;
-                font-size: 20px;
-                padding-bottom: 0px;
-            }
-            #logo {
-                width: 200px;
-                padding: 15px 0px 30px 35px;
-            }
-            #navbarNavDropdown {
-                display: flex;
-                justify-content: right;
-                padding: 30px 10px 20px 0px;
-            }
-            .nav-item {
-                padding-right: 20px;
-            }
-            #carouselExampleCaptions {
-                background-image: url(https://www.ama.edu.ph/wp-content/uploads/2017/05/AMA_Univ_slide_01.jpg);
-            }
-            #about_section {
-                background-color: maroon;
-            }
-            #about_section2 {
-                color: azure;
-                text-align: center;
-                padding: 70px 70px;
-            }
-            .carousel {
-                padding: 100px;
-            }
+           
         </style>
     </head>
     <body>
-        {{-- first navbar --}}
-        <nav class="navbar bg-body-tertiary" id="color_nav">
-            <div class="container-fluid">
-                <span class="navbar-text" id="first_nav">
-                    <img src="img/call_white.png" alt="call icon" id="call" />
-                    Call Us: 1234-5678
-                    <a href="#" id="top_email"
-                        ><img
-                            src="img/mail_white.jpg"
-                            alt="mail_icon"
-                            id="mail"
-                        />cae_university@amaes.edu.ph</a
-                    >
-                </span>
-                <span id="icons">
-                    <a href="#"
-                        ><img
-                            src="img/fb.png"
-                            alt="fb icon"
-                            style="width: 20px; margin-right: 15px"
-                    /></a>
-                    <a href="#"
-                        ><img
-                            src="img/twitter.png"
-                            alt="twitter icon"
-                            style="width: 20px; margin-right: 15px"
-                    /></a>
-                    <a href="#"
-                        ><img
-                            src="img/in.png"
-                            alt="linkedin icon"
-                            style="width: 20px; margin-right: 15px"
-                    /></a>
-                    <a href="#"
-                        ><img
-                            src="img/yt.png"
-                            alt="youtube icon"
-                            style="width: 20px; margin-right: 15px"
-                    /></a>
-                    <a href="#"
-                        ><img
-                            src="img/insta.webp"
-                            alt="instagram icon"
-                            style="width: 20px; margin-right: 15px"
-                    /></a>
-                </span>
-            </div>
-        </nav>
-
-        {{-- second navbar --}}
-        <nav class="navbar navbar-expand-lg bg-body-tertiary" id="second_nav">
-            <div class="container-fluid">
-                <a class="navbar-brand" href="#"
-                    ><img src="img/ama.svg.png" alt="logo" id="logo"
-                /></a>
-                <button
-                    class="navbar-toggler"
-                    type="button"
-                    data-bs-toggle="collapse"
-                    data-bs-target="#navbarNavDropdown"
-                    aria-controls="navbarNavDropdown"
-                    aria-expanded="false"
-                    aria-label="Toggle navigation"
-                >
-                    <span class="navbar-toggler-icon"></span>
-                </button>
-                <div class="collapse navbar-collapse" id="navbarNavDropdown">
-                    <ul class="navbar-nav">
-                        <li class="nav-item">
-                            <a
-                                class="nav-link active"
-                                aria-current="page"
-                                href="#"
-                                ><b>HOME</b></a
-                            >
-                        </li>
-                        <li class="nav-item dropdown">
-                            <a
-                                class="nav-link dropdown-toggle"
-                                href="#"
-                                role="button"
-                                data-bs-toggle="dropdown"
-                                aria-expanded="false"
-                            >
-                                <b>ABOUT</b>
-                            </a>
-                            <ul class="dropdown-menu">
-                                <li>
-                                    <a class="dropdown-item" href="#">Action</a>
-                                </li>
-                                <li>
-                                    <a class="dropdown-item" href="#"
-                                        >Another action</a
-                                    >
-                                </li>
-                                <li>
-                                    <a class="dropdown-item" href="#"
-                                        >Something else here</a
-                                    >
-                                </li>
-                            </ul>
-                        </li>
-                        <li class="nav-item dropdown">
-                            <a
-                                class="nav-link dropdown-toggle"
-                                href="#"
-                                role="button"
-                                data-bs-toggle="dropdown"
-                                aria-expanded="false"
-                            >
-                                <b>PROGRAMS</b>
-                            </a>
-                            <ul class="dropdown-menu">
-                                <li>
-                                    <a class="dropdown-item" href="#">Action</a>
-                                </li>
-                                <li>
-                                    <a class="dropdown-item" href="#"
-                                        >Another action</a
-                                    >
-                                </li>
-                                <li>
-                                    <a class="dropdown-item" href="#"
-                                        >Something else here</a
-                                    >
-                                </li>
-                            </ul>
-                        </li>
-                        <li class="nav-item dropdown">
-                            <a
-                                class="nav-link dropdown-toggle"
-                                href="#"
-                                role="button"
-                                data-bs-toggle="dropdown"
-                                aria-expanded="false"
-                            >
-                                <b>ADMISSIONS</b>
-                            </a>
-                            <ul class="dropdown-menu">
-                                <li>
-                                    <a class="dropdown-item" href="#">Action</a>
-                                </li>
-                                <li>
-                                    <a class="dropdown-item" href="#"
-                                        >Another action</a
-                                    >
-                                </li>
-                                <li>
-                                    <a class="dropdown-item" href="#"
-                                        >Something else here</a
-                                    >
-                                </li>
-                            </ul>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" aria-current="page" href="#"
-                                ><b>LOG IN</b></a
-                            >
-                        </li>
-                    </ul>
-                </div>
-            </div>
-        </nav>
-
+       @include('layouts/navbar')
         {{-- carousel --}}
 
-        <div id="carouselExampleCaptions" class="carousel slide">
+
+        <div class="carousel-indicators">
+            <button
+                type="button"
+                data-bs-target="#carouselExampleCaptions"
+                data-bs-slide-to="0"
+                class="active"
+                aria-current="true"
+                aria-label="Slide 1"
+            ></button>
+            <button
+                type="button"
+                data-bs-target="#carouselExampleCaptions"
+                data-bs-slide-to="1"
+                aria-label="Slide 2"
+            ></button>
+            <button
+                type="button"
+                data-bs-target="#carouselExampleCaptions"
+                data-bs-slide-to="2"
+                aria-label="Slide 3"
+            ></button>
+            <button
+                type="button"
+                data-bs-target="#carouselExampleCaptions"
+                data-bs-slide-to="3"
+                aria-label="Slide 4"
+            ></button>
+        </div>
+
+
+        <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <img src="img/ama_carou.webp" class="d-block w-50 p-5" alt="ama_carou.webp">
+                <div class="carousel-caption d-none d-md-block">
+                    <h1 class="carou_text">AMA Basic Education</h2> <br>
+                   <h3 class="carou_text2"> Online learning for a better education.</h3>
+                   <button class="buttons">Register Online</button>
+                  </div>
+              </div>
+              <div class="carousel-item">
+                <img src="img/ama_carou2.webp" class="d-block w-50 p-5" alt="ama_carou.webp">
+                <div class="carousel-caption d-none d-md-block">
+                    <h1 class="carou_text">AMA Basic Education</h2> <br>
+                        <h3 class="carou_text2"> Online learning for a better education.</h3>
+                        <button class="buttons">Register Online</button>
+                  </div>
+              </div>
+              <div class="carousel-item">
+                <img src="img/ama_carou3.webp" class="d-block w-50 p-5" alt="ama_carou.webp">
+                <div class="carousel-caption d-none d-md-block">
+                    <h1 class="carou_text">AMA Basic Education</h2> <br>
+                        <h3 class="carou_text2"> Online learning for a better education.</h3>
+                        <button class="buttons">Register Online</button>
+                  </div>
+              </div>
+              <div class="carousel-item">
+                <img src="img/ama_carou4.webp" class="d-block w-50 p-5" alt="ama_carou.webp">
+                <div class="carousel-caption d-none d-md-block">
+                    <h1 class="carou_text">AMA Basic Education</h2> <br>
+                        <h3 class="carou_text2"> Online learning for a better education.</h3>
+                        <button class="buttons">Register Online</button>
+                  </div>
+              </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Next</span>
+            </button>
+          </div>
+
+
+
+
+        {{-- <div id="carouselExampleCaptions" class="carousel slide">
             <div class="carousel-indicators">
                 <button
                     type="button"
@@ -353,7 +202,7 @@
                 ></span>
                 <span class="visually-hidden">Next</span>
             </button>
-        </div>
+        </div> --}}
 
         {{-- about section --}}
         <nav class="navbar bg-body-tertiary" id="about_section">
@@ -372,20 +221,138 @@
         {{-- vision and mission --}}
 
         <div class="container-fluid">
-            <div class="row offset-2">
-                <div class="col-lg-4 ">
-                    <img src="img/reputation.webp" alt="icons2" />
-
+            <div class="row justify-content-center">
+                <div class="col-lg-3 py-5">
+                    <img src="img/reputation.webp" alt="icons2" class="about2ndline ps-5 ms-3"/>
+                    <p>
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                        Ipsa dignissimos explicabo voluptas perspiciatis fugiat
+                        numquam quod ea quis eius doloremque.
+                    </p>
                 </div>
-                <div class="col-lg-4 ">
-                    <img src="img/vission.webp" alt="icons2" />
-
+                <div class="col-lg-3 py-5">
+                    <img src="img/vission.webp" alt="icons2" class="about2ndline ps-5 ms-3"/>
+                    <p>
+                        Lorem ipsum dolor sit amet, consectetur adipisicing
+                        elit. Nesciunt quisquam sit repellat a illo. Pariatur
+                        veniam mollitia animi voluptatibus consectetur?
+                    </p>
                 </div>
-                <div class="col-lg-4 ">
-                    <img src="img/campus.webp" alt="icons2" />
-
+                <div class="col-lg-3 py-5">
+                    <img src="img/campus.webp" alt="icons2"  class="about2ndline ps-5 ms-3"/>
+                    <p>
+                        Lorem, ipsum dolor sit amet consectetur adipisicing
+                        elit. Minus reprehenderit officiis sint veritatis quia
+                        iste saepe. Non ut nesciunt perferendis?
+                    </p>
                 </div>
             </div>
         </div>
+        {{-- programs offered --}}
+        <div class="container-fluid" id="programs">
+            <div class="row">
+                <h1>PROGRAMS OFFERED</h1>
+                <div class="col-lg-3">
+                 <img src="img/BSComputer.png" alt="icon" />
+                </div>
+                <div class="col-lg-3">
+                 <img src="img/BSEngineering.png" alt="icon" />
+                </div>
+                <div class="col-lg-3">    
+                <img src="img/BSAccounting.png" alt="icon" />
+            </div>
+            </div>
+        </div>
+
+        {{-- NEWS --}}
+
+        <div class="container-fluid">
+            <div class="row\" id="news">
+                <div class="col-lg-5">
+                    <img src="img/news.png" alt="icon" />
+                </div>
+                <div class="col-lg-3 py-5">
+                    <img src="img/news2.png" alt="icon" />
+                </div>
+            </div>
+        </div>
+
+        {{-- pre-reg --}}
+
+        <div class="container-fluid" id="preregister">
+            <div class="row">
+                <div class="col-lg-12">
+                    <img src="img/pre_register.png" alt="pics" />
+                </div>
+            </div>
+        </div>
+
+        {{-- footer --}}
+
+        <footer class="bg-dark text-white py-5">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-4">
+                        <h5 class="mb-4">CAE Education System</h5>
+                        <p>
+                            CAE University now offers full online education,
+                            earn your degree online - anywhere you are in the
+                            world.
+                        </p>
+                        <p>
+                            Maximina St., Villa Arca Subdivision Proj. 8, Quezon
+                            City
+                        </p>
+                    </div>
+                    <div class="col-md-4">
+                        <h5 class="mb-4">Contact Information</h5>
+                        <p>Hotline: (02) 1234-5678 / 8765-4321</p>
+                        <p>Email: cae_university@caees.edu.ph</p>
+                    </div>
+                    <div class="col-md-4">
+                        <h5 class="mb-4">Quick Links</h5>
+                        <ul class="list-unstyled">
+                            <li><a href="#">HOME</a></li>
+                            <li><a href="#">PROGRAMS</a></li>
+                            <li><a href="#">ADMISSIONS</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="row mt-4">
+                    <div class="col-md-12 text-center">
+                        <p>Follow us:</p>
+                        <a href="#" class="text-white mx-2"
+                            ><i class="fab fa-facebook"></i
+                        ></a>
+                        <a href="#" class="text-white mx-2"
+                            ><i class="fab fa-twitter"></i
+                        ></a>
+                        <a href="#" class="text-white mx-2"
+                            ><i class="fab fa-instagram"></i
+                        ></a>
+                        <a href="#" class="text-white mx-2"
+                            ><i class="fab fa-youtube"></i
+                        ></a>
+                        <a href="#" class="text-white mx-2"
+                            ><i class="fab fa-linkedin"></i
+                        ></a>
+                    </div>
+                </div>
+                <div class="row mt-4">
+                    <div class="col-md-12 text-center">
+                        <p>LINKS</p>
+                        <ul class="list-unstyled">
+                            <li><a href="#">CAE EDUCATION SYSTEM</a></li>
+                            <li><a href="#">CAE NEWS</a></li>
+                            <li><a href="#">Branch/Campus Directory</a></li>
+                            <li><a href="#">CAEES TV</a></li>
+                            <li><a href="#">INVESTORS</a></li>
+                            <li><a href="#">CAREERS</a></li>
+                            <li><a href="#">PRIVACY POLICY</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </footer>
     </body>
 </html>

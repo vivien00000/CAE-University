@@ -73,6 +73,19 @@
             .carousel {
                 padding: 100px;
             }
+            #programs {
+                background-color: gray;
+            }
+            #news {
+                background-image: url(https://www.ama.edu.ph/wp-content/uploads/2019/11/CHED-Grants-Autonomous-Status-to-AMA-bg1.jpg);
+                width: 100%;
+                padding: 0%;
+                margin: 0%;
+            }
+            #preregister {
+                padding: 0%;
+                margin: 0%;
+            }
         </style>
     </head>
     <body>
@@ -232,8 +245,43 @@
                         </li>
                         <li class="nav-item">
                             <a class="nav-link" aria-current="page" href="#"
-                                ><b>CONTACT US</b></a
+                                ><b>LOG IN</b></a
                             >
+
+                            <div
+                                class="modal fade"
+                                id="loginModal"
+                                tabindex="-1"
+                                role="dialog"
+                                aria-labelledby="loginModalLabel"
+                                aria-hidden="true"
+                            >
+                                <div class="modal-dialog" role="document">
+                                    <div class="modal-content">
+                                        <div class="modal-header">
+                                            <h5
+                                                class="modal-title"
+                                                id="loginModalLabel"
+                                            >
+                                                Choose Login Type
+                                            </h5>
+                                            <button
+                                                type="button"
+                                                class="close"
+                                                data-dismiss="modal"
+                                                aria-label="Close"
+                                            >
+                                                <span aria-hidden="true"
+                                                    >&times;</span
+                                                >
+                                            </button>
+                                        </div>
+                                        <div class="modal-body">
+                                            <p>Select the login type:</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
                         </li>
                     </ul>
                 </div>
@@ -372,17 +420,134 @@
         {{-- vision and mission --}}
 
         <div class="container-fluid">
-            <div class="row">
-                <div class="col-md-4">
+            <div class="row offset-2">
+                <div class="col-lg-4 py-5">
                     <img src="img/reputation.webp" alt="icons2" />
+                    <p>
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                        Ipsa dignissimos explicabo voluptas perspiciatis fugiat
+                        numquam quod ea quis eius doloremque.
+                    </p>
                 </div>
-                <div class="col-md-4">
+                <div class="col-lg-4 py-5">
                     <img src="img/vission.webp" alt="icons2" />
+                    <p>
+                        Lorem ipsum dolor sit amet, consectetur adipisicing
+                        elit. Nesciunt quisquam sit repellat a illo. Pariatur
+                        veniam mollitia animi voluptatibus consectetur?
+                    </p>
                 </div>
-                <div class="col-md-4">
+                <div class="col-lg-4 py-5">
                     <img src="img/campus.webp" alt="icons2" />
+                    <p>
+                        Lorem, ipsum dolor sit amet consectetur adipisicing
+                        elit. Minus reprehenderit officiis sint veritatis quia
+                        iste saepe. Non ut nesciunt perferendis?
+                    </p>
                 </div>
             </div>
         </div>
+        {{-- programs offered --}}
+        <div class="container-fluid" id="programs">
+            <div class="row offset-4 pt-5">
+                <div class="col-lg-6">
+                    <h1>PROGRAMS OFFERED</h1>
+                    <img src="img/BSComputer.png" alt="icon" />
+                    <img src="img/BSEngineering.png" alt="icon" />
+                    <img src="img/BSAccounting.png" alt="icon" />
+                </div>
+            </div>
+        </div>
+
+        {{-- NEWS --}}
+
+        <div class="container-fluid">
+            <div class="row\" id="news">
+                <div class="col-lg-5">
+                    <img src="img/news.png" alt="icon" />
+                </div>
+                <div class="col-lg-3 py-5">
+                    <img src="img/news2.png" alt="icon" />
+                </div>
+            </div>
+        </div>
+
+        {{-- pre-reg --}}
+
+        <div class="container-fluid" id="preregister">
+            <div class="row">
+                <div class="col-lg-12">
+                    <img src="img/pre_register.png" alt="pics" />
+                </div>
+            </div>
+        </div>
+
+        {{-- footer --}}
+
+        <footer class="bg-dark text-white py-5">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-4">
+                        <h5 class="mb-4">CAE Education System</h5>
+                        <p>
+                            CAE University now offers full online education,
+                            earn your degree online - anywhere you are in the
+                            world.
+                        </p>
+                        <p>
+                            Maximina St., Villa Arca Subdivision Proj. 8, Quezon
+                            City
+                        </p>
+                    </div>
+                    <div class="col-md-4">
+                        <h5 class="mb-4">Contact Information</h5>
+                        <p>Hotline: (02) 1234-5678 / 8765-4321</p>
+                        <p>Email: cae_university@caees.edu.ph</p>
+                    </div>
+                    <div class="col-md-4">
+                        <h5 class="mb-4">Quick Links</h5>
+                        <ul class="list-unstyled">
+                            <li><a href="#">HOME</a></li>
+                            <li><a href="#">PROGRAMS</a></li>
+                            <li><a href="#">ADMISSIONS</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="row mt-4">
+                    <div class="col-md-12 text-center">
+                        <p>Follow us:</p>
+                        <a href="#" class="text-white mx-2"
+                            ><i class="fab fa-facebook"></i
+                        ></a>
+                        <a href="#" class="text-white mx-2"
+                            ><i class="fab fa-twitter"></i
+                        ></a>
+                        <a href="#" class="text-white mx-2"
+                            ><i class="fab fa-instagram"></i
+                        ></a>
+                        <a href="#" class="text-white mx-2"
+                            ><i class="fab fa-youtube"></i
+                        ></a>
+                        <a href="#" class="text-white mx-2"
+                            ><i class="fab fa-linkedin"></i
+                        ></a>
+                    </div>
+                </div>
+                <div class="row mt-4">
+                    <div class="col-md-12 text-center">
+                        <p>LINKS</p>
+                        <ul class="list-unstyled">
+                            <li><a href="#">CAE EDUCATION SYSTEM</a></li>
+                            <li><a href="#">CAE NEWS</a></li>
+                            <li><a href="#">Branch/Campus Directory</a></li>
+                            <li><a href="#">CAEES TV</a></li>
+                            <li><a href="#">INVESTORS</a></li>
+                            <li><a href="#">CAREERS</a></li>
+                            <li><a href="#">PRIVACY POLICY</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </footer>
     </body>
 </html>
