@@ -1,4 +1,4 @@
-Vivien Rose Caampued body {
+body {
     font-family: Arial, sans-serif;
     background-color: #f4f4f4;
     background-size: cover;
@@ -42,11 +42,11 @@ body #login_form_container {
     width: 100%;
     padding: 10px;
     border: none;
-    background-color: #007bff;
+    background-color: rgb(114, 15, 15);
     color: #fff;
     cursor: pointer;
     border-radius: 4px;
 }
 .form-group button:hover {
-    background-color: #0056b3;
+    background-color: maroon;
 }
