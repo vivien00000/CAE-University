@@ -1,6 +1,6 @@
 body {
     font-family: Arial, sans-serif;
-    background-color: #f4f4f4;
+    background-color: white;
     background-size: cover;
 }
 
@@ -9,17 +9,16 @@ body #login_form_container {
     justify-content: center; /* Horizontal centering */
     align-items: center; /* Vertical centering */
     height: 100vh; /* Ensures container takes up full viewport height */
+    margin-top: -12%;
 }
 
 .login-container {
     background-color: #fff;
     padding: 20px;
     border-radius: 8px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 0 20px maroon;
     width: 300px;
-    /* display: center;
-    justify-content: center;
-    align-items: center; */
+   
 }
 .login-container h2 {
     text-align: center;

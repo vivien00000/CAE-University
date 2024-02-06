@@ -1,3 +1,10 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        @include('layouts/bootstap')
+        <link rel="stylesheet" href="css/home.css">
+    </head>
+ 
  {{-- first navbar --}}
  <nav class="navbar bg-body-tertiary" id="color_nav">
     <div class="container-fluid">
@@ -153,7 +160,7 @@
                     </ul>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" aria-current="page" href="#" data-toggle="modal" data-target="#loginModal">
+                    <a class="nav-link" aria-current="page" href="/user_login" data-toggle="modal" data-target="#loginModal">
                         <b>LOG IN</b>
                     </a>
                 </li>

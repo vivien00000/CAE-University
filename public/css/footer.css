@@ -1,9 +1,39 @@
 .container {
     color: rgb(192, 192, 192);
+    align-items: center;
 }
 #footlogo {
     width: 50%;
-    border: 2px maroon;
-    border-radius: 8%;
-    margin-left: 50px;
+    margin-left: 70px;
+   background-blend-mode: color;
+}
+
+#text_logo{
+    font-size: 15px;
+}
+#text_logo:hover{
+    color: yellow;
+
+}
+#text_logo2:hover {
+    color: rgb(230, 89, 89);
+}
+#text_logo2 {
+    font-size: 20px;
+    padding-top: 5px;
+    padding-right: -0px;
+}
+
+#small_logo {
+    width: 30px;
+    padding-left: 5px;
+}
+
+#hyperlink{
+    text-decoration: none;
+    color: white;
+}
+
+#hyperlink:hover{
+    color: rgb(230, 89, 89);
 }
