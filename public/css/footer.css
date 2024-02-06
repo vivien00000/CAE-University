@@ -1,0 +1,9 @@
+.container {
+    color: rgb(192, 192, 192);
+}
+#footlogo {
+    width: 50%;
+    border: 2px maroon;
+    border-radius: 8%;
+    margin-left: 50px;
+}

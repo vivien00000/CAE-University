@@ -51,7 +51,7 @@
 <nav class="navbar navbar-expand-lg bg-body-tertiary" id="second_nav">
     <div class="container-fluid">
         <a class="navbar-brand" href="#"
-            ><img src="img/ama.svg.png" alt="logo" id="logo"
+            ><img src="img/caeLogo.png" alt="logo" id="logo"
         /></a>
         <button
             class="navbar-toggler"
@@ -156,23 +156,6 @@
                     <a class="nav-link" aria-current="page" href="#" data-toggle="modal" data-target="#loginModal">
                         <b>LOG IN</b>
                     </a>
-                
-                    {{-- <div class="modal fade" id="loginModal" tabindex="-1" role="dialog" aria-labelledby="loginModalLabel" aria-hidden="true">
-                        <div class="modal-dialog" role="document">
-                            <div class="modal-content">
-                                <div class="modal-header">
-                                    <h5 class="modal-title" id="loginModalLabel">Choose Login Type</h5>
-                                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                                        <span aria-hidden="true">&times;</span>
-                                    </button>
-                                </div>
-                                <div class="modal-body">
-                                    <p>Select the login type:</p>
-                                    <a href="user_login" class="btn btn-success">Student Login</a>
-                                </div>
-                            </div>
-                        </div>
-                    </div> --}}
                 </li>
             </ul>
             </div>

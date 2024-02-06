@@ -32,14 +32,15 @@ body {
 #second_nav {
     background-color: white;
     font-size: 20px;
-    padding-bottom: 0px;
+    padding-top: 0px;
 }
 #logo {
-    width: 200px;
-    padding: 15px 0px 30px 35px;
+    width: 220px;
+    padding: 0px 0px 0px 35px;
+    margin: 0%;
 }
 #navbarNavDropdown {
-    display: flex;
+    /* display: flex; */
     justify-content: right;
     padding: 30px 10px 20px 0px;
 }
@@ -47,7 +48,8 @@ body {
     padding-right: 20px;
 }
 #carouselExampleCaptions {
-    background-image: url(https://www.ama.edu.ph/wp-content/uploads/2017/05/AMA_Univ_slide_01.jpg);
+    background-image: url("../img/BG.jpg");
+    background-size: cover;
 }
 #about_section {
     background-color: maroon;
@@ -73,14 +75,14 @@ body {
     padding: 0%;
     margin: 0%;
 }
-.carousel-indicators {
-    transform: translateY(100px);
-}
+
 .carou_text {
-    transform: translateY(-110px) translateX(255px);
+    transform: translateY(-400%) translateX(20%);
+    font-size: 30px;
 }
 .carou_text2 {
-    transform: translateY(-140px) translateX(295px);
+    transform: translateY(-500%) translateX(30%);
+    font-size: 25px;
 }
 .buttons {
     padding: 8px 25px;
@@ -88,17 +90,63 @@ body {
     border: 1px solid #ffffff;
     color: white;
     background-color: rgba(255, 255, 255, 0.073);
-    transform: translateY(-110px) translateX(160px);
+    transform: translateY(-200%) translateX(50%);
     font-size: 25px;
+    transition: 1s;
 }
 .buttons:hover {
-    padding-top: 10px;
-    padding-left: 20px;
-    padding-right: 20px;
+    padding: 8px 25px;
     border-radius: 50px;
-    border: 0px solid #ffffff;
+    border: 1px solid #ffffff00;
     color: white;
     background-color: rgba(255, 255, 255, 0.1);
-    transform: translateY(-110px) translateX(160px);
+    transform: translateY(-200%) translateX(50%);
     font-size: 25px;
+    transition: 1s;
+}
+
+p {
+    text-align: center;
+}
+.programs {
+    text-align: center;
+    padding: 70px 0px 70px 0px;
+    font-size: 300%;
+}
+.offered {
+    width: 100%;
+    border-radius: 10%;
+    display: flex;
+    justify-content: center;
+    filter: brightness(1);
+}
+.offered:hover {
+    border-radius: 20%;
+    transition: 1s;
+    cursor: pointer;
+}
+
+.collegeof {
+    font-size: 18px;
+    text-align: center;
+    padding: 10px 0px 10px 0px;
+    margin: 20px 0px 150px 0px;
+    border-radius: 50px;
+    border: 2px solid #2a2a2a;
+    color: rgb(21, 21, 21);
+    background-color: rgba(255, 255, 255, 0.073);
+}
+.collegeof:hover {
+    font-size: 18px;
+    padding: 10px 0px 10px 0px;
+    color: maroon;
+    cursor: pointer;
+    transition: 1s;
+    border-radius: 50px;
+    border: 2px solid #ffffff00;
+    color: rgb(19, 19, 19);
+    background-color: rgba(255, 255, 255, 0.1);
+}
+.about2ndline {
+    margin: 100px 0px 30px 20px;
 }
