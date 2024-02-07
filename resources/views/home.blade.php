@@ -105,7 +105,7 @@
             </div>
         </div>
          <!-- space -->
-    <div class="d-flex" style="height: 83px">
+    <div class="d-flex" style="height: 10px">
         <div class="vr"></div>
       </div>
         {{-- programs offered --}}
