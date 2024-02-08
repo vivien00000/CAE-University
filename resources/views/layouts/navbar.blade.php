@@ -4,10 +4,10 @@
         @include('layouts/bootstap')
         <link rel="stylesheet" href="css/home.css">
     </head>
- 
+
  {{-- first navbar --}}
  <nav class="navbar bg-body-tertiary" id="color_nav">
-    <div class="container-fluid">
+    <div class="container-fluid px-1">
         <span class="navbar-text" id="first_nav">
             <img src="img/call_white.png" alt="call icon" id="call" />
             Call Us: 1234-5678
@@ -24,31 +24,31 @@
                 ><img
                     src="img/fb.png"
                     alt="fb icon"
-                    style="width: 20px; margin-right: 15px"
+                    style="width: 15px; margin-right: 10px"
             /></a>
             <a href="#"
                 ><img
                     src="img/twitter.png"
                     alt="twitter icon"
-                    style="width: 20px; margin-right: 15px"
+                    style="width: 15px; margin-right: 10px"
             /></a>
             <a href="#"
                 ><img
                     src="img/in.png"
                     alt="linkedin icon"
-                    style="width: 20px; margin-right: 15px"
+                    style="width: 15px; margin-right: 10px"
             /></a>
             <a href="#"
                 ><img
                     src="img/yt.png"
                     alt="youtube icon"
-                    style="width: 20px; margin-right: 15px"
+                    style="width: 15px; margin-right: 10px"
             /></a>
             <a href="#"
                 ><img
                     src="img/insta.webp"
                     alt="instagram icon"
-                    style="width: 20px; margin-right: 15px"
+                    style="width: 15px; margin-right: 10px"
             /></a>
         </span>
     </div>
@@ -93,7 +93,7 @@
                     </a>
                     <ul class="dropdown-menu">
                         <li>
-                            <a class="dropdown-item" href="#">Action</a>
+                            <a class="dropdown-item" href="/about">About CAE University</a>
                         </li>
                         <li>
                             <a class="dropdown-item" href="#"
@@ -117,18 +117,18 @@
                     >
                         <b>PROGRAMS</b>
                     </a>
-                    <ul class="dropdown-menu">
+                    <ul class="dropdown-menu" id="prog_drop">
                         <li>
-                            <a class="dropdown-item" href="#">Action</a>
+                            <a class="dropdown-item" href="#">Computer Sciences</a>
                         </li>
                         <li>
                             <a class="dropdown-item" href="#"
-                                >Another action</a
+                                >Business Administration</a
                             >
                         </li>
                         <li>
                             <a class="dropdown-item" href="#"
-                                >Something else here</a
+                                >Engineering</a
                             >
                         </li>
                     </ul>

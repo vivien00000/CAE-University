@@ -1,0 +1,51 @@
+body {
+    margin: 0;
+    font-family: "Lato Extended","Lato","Helvetica Neue",Helvetica,Arial,sans-serif;
+}
+
+.sidenav {
+    height: 100%;
+    width: 100px; /* Adjust the width as needed */
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: maroon;
+    overflow-x: hidden;
+    padding-top: 20px;
+    text-align: center;
+
+}
+
+.sidenav a {
+    padding: 8px 0;
+    text-decoration: none;
+    font-size: 16px;
+    color: #fff;
+    display: block;
+}
+
+.sidenav a:hover {
+    color: #f1f1f1;
+}
+
+.sidenav i {
+    margin-bottom: 5px;
+}
+
+.main {
+    margin-left: 60px; /* Adjust this margin according to the width of the side navbar */
+    padding: 20px;
+}
+
+@media screen and (max-width: 768px) {
+    .sidenav {
+        width: 40px; /* Adjust the width for smaller screens */
+    }
+    .sidenav a {
+        font-size: 10px; /* Adjust font size for smaller screens */
+    }
+    .main {
+        margin-left: 40px; /* Adjust margin for smaller screens */
+    }
+}

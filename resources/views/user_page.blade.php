@@ -2,151 +2,90 @@
 <html lang="en">
 <head>
     @include('layouts/bootstap')
-   <script src="js/user_sidebar.js"></script>
    <link rel="stylesheet" href="css/user_page.css">
-    <title>Document</title>
+   <link rel="stylesheet" href="css/calendar.css">
+    <script src="js/calendar.js"></script>
+   <style>
+       /* Adjustments for fixed position on the right side */
+
+   </style>
 </head>
 <body>
-    @include('layouts/user_navbar')
     @include('layouts/left_navbar')
-    {{-- @include('layouts/right_navbar') --}}
+    @include('layouts/calendar')
 
-   
-<div class="container" id="card_container">
-    <h1 class="text-left">Dashboard</h1>
-    <div class="row">
-        <div class="col-lg-3">
-            <div class="card">
-                <img class="card-img-top" src="../bootstrap4/img_avatar1.png" alt="Card image">
-                <div class="card-body">
-                  <h4 class="card-title"> <a href="#" id="href" >Introduction to Computing</a> </h4>
-                  <p class="card-text">Some example text some example text. John Doe is an architect and engineer</p>
-                </div>
-              </div>
-        </div>
-        <div class="col-lg-3">
-            <div class="card">
-                <img class="card-img-top" src="../bootstrap4/img_avatar1.png" alt="Card image">
-                <div class="card-body">
-                     <h4 class="card-title"> <a href="#" id="href" >Computer Programming</a> </h4>
-                  <p class="card-text">Some example text some example text. John Doe is an architect and engineer</p>
-                </div>
-              </div>
-        </div>
-        <div class="col-lg-3">
-            <div class="card">
-                <img class="card-img-top" src="../bootstrap4/img_avatar1.png" alt="Card image">
-                <div class="card-body">
-                     <h4 class="card-title"> <a href="#" id="href" >Advance Computer Programming</a> </h4>
-                  <p class="card-text">Some example text some example text. John Doe is an architect and engineer</p>
-                </div>
-              </div>
-        </div>
-        </div>
-        <div class="row">
-            <div class="col-lg-3">
-                <div class="card">
-                    <img class="card-img-top" src="../bootstrap4/img_avatar1.png" alt="Card image">
-                    <div class="card-body">
-                         <h4 class="card-title"> <a href="#" id="href" >John Doe</a> </h4>
-                      <p class="card-text">Some example text some example text. John Doe is an architect and engineer</p>
-
-                    </div>
-                  </div>
-            </div>
-            <div class="col-lg-3">
-                <div class="card">
-                    <img class="card-img-top" src="../bootstrap4/img_avatar1.png" alt="Card image">
-                    <div class="card-body">
-                         <h4 class="card-title"> <a href="#" id="href" >John Doe</a> </h4>
-                      <p class="card-text">Some example text some example text. John Doe is an architect and engineer</p>
-
-                    </div>
-                  </div>
-            </div>
-            <div class="col-lg-3">
-                <div class="card">
-                    <img class="card-img-top" src="../bootstrap4/img_avatar1.png" alt="Card image">
-                    <div class="card-body">
-                         <h4 class="card-title"> <a href="#" id="href" >John Doe</a> </h4>
-                      <p class="card-text">Some example text some example text. John Doe is an architect and engineer</p>
-
-                    </div>
-                  </div>
-            </div>
-            </div>
-            <div class="row">
-                <div class="col-lg-3">
-                    <div class="card">
-                        <img class="card-img-top" src="../bootstrap4/img_avatar1.png" alt="Card image">
-                        <div class="card-body">
-                             <h4 class="card-title"> <a href="#" id="href" >John Doe</a> </h4>
-                          <p class="card-text">Some example text some example text. John Doe is an architect and engineer</p>
-    
-                        </div>
-                      </div>
-                </div>
-                <div class="col-lg-3">
-                    <div class="card">
-                        <img class="card-img-top" src="../bootstrap4/img_avatar1.png" alt="Card image">
-                        <div class="card-body">
-                             <h4 class="card-title"> <a href="#" id="href" >John Doe</a> </h4>
-                          <p class="card-text">Some example text some example text. John Doe is an architect and engineer</p>
-    
-                        </div>
-                      </div>
-                </div>
-                <div class="col-lg-3">
-                    <div class="card">
-                        <img class="card-img-top" src="../bootstrap4/img_avatar1.png" alt="Card image">
-                        <div class="card-body">
-                             <h4 class="card-title"> <a href="#" id="href" >John Doe</a> </h4>
-                          <p class="card-text">Some example text some example text. John Doe is an architect and engineer</p>
-    
-                        </div>
-                      </div>
-                </div>
-                <div class="row">
-                    <div class="col-lg-3">
-                        <div class="card">
-                            <img class="card-img-top" src="../bootstrap4/img_avatar1.png" alt="Card image">
-                            <div class="card-body">
-                                 <h4 class="card-title"> <a href="#" id="href" >John Doe</a> </h4>
-                              <p class="card-text">Some example text some example text. John Doe is an architect and engineer</p>
-        
+    <div class="container" id="card_container">
+        <div class="row" id="text">
+            <div class="col-lg-9">
+                <h1>Dashboard</h1>
+                <hr>
+                        <div class="row">
+                            <div class="col-lg-3">
+                                <div class="card">
+                                    <img class="card-img-top" src="img/intro.png" alt="introduction to Computing image">
+                                    <div class="card-body">
+                                      <h4 class="card-title"> <a href="#" id="href" >Introduction to Computing</a> </h4>
+                                    </div>
+                                  </div>
                             </div>
-                          </div>
-                    </div>
-                    <div class="col-lg-3">
-                        <div class="card">
-                            <img class="card-img-top" src="../bootstrap4/img_avatar1.png" alt="Card image">
-                            <div class="card-body">
-                                 <h4 class="card-title"> <a href="#" id="href" >John Doe</a> </h4>
-                              <p class="card-text">Some example text some example text. John Doe is an architect and engineer</p>
-        
+                            <div class="col-lg-3">
+                                <div class="card">
+                                    <img class="card-img-top" src="img/program.jpg" alt="Card image">
+                                    <div class="card-body">
+                                         <h4 class="card-title"> <a href="#" id="href" >Computer Programming</a> </h4>
+                                    </div>
+                                  </div>
                             </div>
-                          </div>
-                    </div>
-                    <div class="col-lg-3">
-                        <div class="card">
-                            <img class="card-img-top" src="../bootstrap4/img_avatar1.png" alt="Card image">
-                            <div class="card-body">
-                                 <h4 class="card-title"> <a href="#" id="href" >John Doe</a> </h4>
-                              <p class="card-text">Some example text some example text. John Doe is an architect and engineer</p>
-        
+                            <div class="col-lg-3">
+                                <div class="card">
+                                    <img class="card-img-top" src="img/advance.jpg" alt="Card image">
+                                    <div class="card-body">
+                                         <h4 class="card-title"> <a href="#" id="href" >Advance Computer Programming</a> </h4>
+                                    </div>
+                                  </div>
                             </div>
-                          </div>
-                    </div>
-                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-lg-3">
+                                    <div class="card">
+                                        <img class="card-img-top" src="img/data.jpg" alt="Card image">
+                                        <div class="card-body">
+                                             <h4 class="card-title"> <a href="#" id="href" >Data Structures and Algorithms</a> </h4>
+
+                                        </div>
+                                      </div>
+                                </div>
+                                <div class="col-lg-3">
+                                    <div class="card">
+                                        <img class="card-img-top" src="img/information.jpg" alt="Card image">
+                                        <div class="card-body">
+                                             <h4 class="card-title"> <a href="#" id="href" >Information Management</a> </h4>
+
+                                        </div>
+                                      </div>
+                                </div>
+                                <div class="col-lg-3">
+                                    <div class="card">
+                                        <img class="card-img-top" src="img/human computer.jpg" alt="Card image">
+                                        <div class="card-body">
+                                             <h4 class="card-title"> <a href="#" id="href" >Human-computer interaction</a> </h4>
+
+                                        </div>
+                                      </div>
+                                </div>
+                                </div>
+
+                            </div>
+
+            <div class="col-lg-3 todo-items" id="todo"> <!-- Take up 3 columns for the To-Do items -->
+                <h3>To-Do List</h3>
+                <ul class="list-group">
+                    <li class="list-group-item">Nothing to show</li>
+                    <li class="list-group-item">Recent Feedback</li>
+                </ul>
+                <button type="button" class="btn btn-primary mt-3">View Grades</button>
+            </div>
+        </div>
     </div>
-  {{-- <h2>Card Image</h2>
-  <p>Image at the top (card-img-top):</p>
-
-  <br>
-  
-  <p>Image at the bottom (card-img-bottom):</p>
-   --}}
-
-</div>
 </body>
 </html>

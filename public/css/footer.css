@@ -1,27 +1,32 @@
 .container {
-    color: rgb(192, 192, 192);
     align-items: center;
+    padding: 0%;
 }
 #footlogo {
     width: 50%;
     margin-left: 70px;
-   background-blend-mode: color;
+    background-blend-mode: color;
 }
 
-#text_logo{
+#text_logo {
     font-size: 15px;
+    color: rgba(255, 217, 0, 0.525);
 }
-#text_logo:hover{
-    color: yellow;
-
+#text_logo:hover {
+    color: rgb(189, 189, 31);
+    cursor: pointer;
+    transition: 700ms;
 }
 #text_logo2:hover {
-    color: rgb(230, 89, 89);
+    color: rgb(232, 232, 232);
+    cursor: pointer;
+    transition: 700ms;
 }
 #text_logo2 {
-    font-size: 20px;
+    font-size: 18px;
     padding-top: 5px;
     padding-right: -0px;
+    color: rgba(226, 153, 70, 0.753);
 }
 
 #small_logo {
@@ -29,11 +34,25 @@
     padding-left: 5px;
 }
 
-#hyperlink{
+#hyperlink {
     text-decoration: none;
-    color: white;
+    color: rgba(255, 255, 255, 0.753);
 }
 
-#hyperlink:hover{
+#hyperlink:hover {
     color: rgb(230, 89, 89);
+    cursor: pointer;
+    transition: 700ms;
+}
+#text_logo3 {
+    font-size: 15px;
+    padding-top: 5px;
+    padding-right: -0px;
+    color: rgba(192, 192, 192, 0.871);
+}
+#text_logo4 {
+    font-size: 15px;
+    padding-top: 5px;
+    padding-right: -0px;
+    color: rgb(255, 255, 255);
 }

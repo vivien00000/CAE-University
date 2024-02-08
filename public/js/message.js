@@ -3,3 +3,4 @@ $(document).ready(function () {
         alert("Welcome to CAE College!");
     });
 });
+

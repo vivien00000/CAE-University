@@ -1,6 +1,10 @@
 .container {
-    text-align: center;
-    padding-left: 10%;
+    padding-left: 5%;
+    padding-top: -50px;
+}
+
+#text {
+    margin-top: 20px;
 }
 
 /* Styling for card titles */
@@ -41,11 +45,11 @@
 .card {
     margin-bottom: 20px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    transition: box-shadow 0.3s ease;
+    transition: box-shadow 0.4s ease;
 }
 
 .card:hover {
-    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    box-shadow: 0 8px 16px maroon;
 }
 #href {
     color: black;
@@ -53,4 +57,32 @@
 
 #card_container {
     margin-top: 6%;
+}
+
+#todo{
+    padding-top: 90px;
+}
+.todo-items {
+    position: fixed;
+    top: 50px;
+    right: 20px;
+    width: 300px; /* Adjust width as needed */
+}
+
+/* Additional CSS for responsiveness */
+.col-lg-3 {
+    flex: 0 0 100%; /* Ensures each column takes up full width on small screens */
+    max-width: 100%;
+}
+@media (min-width: 576px) {
+    .col-lg-3 {
+        flex: 0 0 50%; /* Two columns on medium screens */
+        max-width: 50%;
+    }
+}
+@media (min-width: 768px) {
+    .col-lg-3 {
+        flex: 0 0 33.333333%; /* Three columns on large screens */
+        max-width: 33.333333%;
+    }
 }
