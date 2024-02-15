@@ -10,22 +10,45 @@
     @include('layouts/left_navbar')
     @include('layouts/calendar')
 
-    <table class="table">
-        <tr>
-            <th>Subject ID</th>
-            <th>Subject Name</th>
-            <th>Department</th>
-        </tr>
-        @foreach ($subjects as $s)
-        <tr>
-            <td>{{$s -> subject_id}}</td>
-            <td>{{$s -> name}}</td>
-            <td>{{$s -> department}}</td>
-        </tr>
-        @endforeach
-    </table>
+<style>
+    table {
+        margin-top: 10%;
+        margin-left: 8%;
+        width: 65%;
+        border-collapse: collapse;
+    }
+    th, td {
+        border: 1px solid #dddddd;
+        text-align: left;
+        padding: 8px;
+    }
+    th {
+        background-color: #f2f2f2;
+    }
+</style>
+</head>
+<body>
 
-    <div class="col-lg-3 todo-items" id="todo"> <!-- Take up 3 columns for the To-Do items -->
+
+<table>
+  <tr>
+    <th>Course</th>
+    <th>Room</th>
+    <th>Schedule</th>
+    <th>Professor</th>
+  </tr>
+  @foreach ( $subjects as $s )
+  <tr>
+        <td>{{$s->name}}</td>
+        <td>{{$s->room}}</td>
+        <td>{{$s->schedule}}</td>
+        <td>{{$s->last_name}} , {{$s->first_name}}</td>
+  </tr>
+  @endforeach
+</table>
+{{$subjects -> links('pagination::bootstrap-5')}}
+
+    <div class="col-lg-3 todo-items" id="todo">
         <h3>To-Do List</h3>
         <ul class="list-group">
             <li class="list-group-item">Nothing to show</li>
