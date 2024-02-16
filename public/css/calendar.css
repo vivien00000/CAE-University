@@ -1,0 +1,43 @@
+.calendar {
+    width: 20%;
+    border: 3% solid black;
+    padding: 1%;
+    position: fixed;
+    top: 45%;
+    right: 2%;
+    background-color: white;
+    z-index: 999;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+}
+
+.calendar .calendar-body {
+    text-align: center;
+}
+
+.calendar .calendar-header {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 10px;
+}
+
+.calendar .calendar-weekdays {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 10px;
+}
+
+.calendar .calendar-weekdays div {
+    width: calc(100% / 7);
+}
+
+.calendar .calendar-days {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.calendar .calendar-days div {
+    width: calc(100% / 7);
+    padding: 5px;
+    border: 1px solid #000000;
+    box-sizing: border-box;
+}
