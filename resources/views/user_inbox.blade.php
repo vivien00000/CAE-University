@@ -10,6 +10,7 @@
     @include('layouts/left_navbar')
     @include('layouts/calendar')
 
+<<<<<<< HEAD
     <style>
         body {
             font-family: Arial, sans-serif;
@@ -62,6 +63,8 @@
     </div>
 </div>
 </div>
+=======
+>>>>>>> 6c63ac9ae85471de6d30031f1b82958acc553f63
     <div class="col-lg-3 todo-items" id="todo"> <!-- Take up 3 columns for the To-Do items -->
         <h3>To-Do List</h3>
         <ul class="list-group">

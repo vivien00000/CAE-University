@@ -7,7 +7,14 @@
     <link rel="stylesheet" href="css/home.css">
     <link rel="stylesheet" href="css/about.css">
     <link rel="stylesheet" href="css/footer.css">
+<<<<<<< HEAD
     <link rel="icon" href="img/favicon.ico" type="image/x-icon"/>
+=======
+<<<<<<< HEAD
+    <link rel="icon" href="img/favicon.ico" type="image/x-icon"/>
+=======
+>>>>>>> f204c4ec4a3d4b01d4745850a2b9de88a0469186
+>>>>>>> 6c63ac9ae85471de6d30031f1b82958acc553f63
     <title>CAE University & Colleges</title>
 </head>
     <div class="container-fluid" id="about_page">

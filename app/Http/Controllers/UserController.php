@@ -46,7 +46,11 @@ class UserController extends Controller
                 if (Session::get('role') == 'admin') {
                     return redirect('/students')->with('success', 'Logged in as admin!');
                 } else if (Session::get('role') == 'user') {
+<<<<<<< HEAD
                     return redirect('/user_dashboard')->with('success', 'Welcome, ' . Session::get('first_name') . '!');
+=======
+                    return redirect('/user_page')->with('success', 'Welcome, ' . Session::get('first_name') . '!');
+>>>>>>> 6c63ac9ae85471de6d30031f1b82958acc553f63
                 }
             } else {
                 return redirect('/user_login')->with('fail', 'Incorrect password.');
@@ -58,6 +62,10 @@ class UserController extends Controller
 
     public function user_login()
     {
+<<<<<<< HEAD
         return view('user_dashboard');
+=======
+        return view('user_page');
+>>>>>>> 6c63ac9ae85471de6d30031f1b82958acc553f63
     }
 }

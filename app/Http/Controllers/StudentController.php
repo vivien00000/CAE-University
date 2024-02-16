@@ -2,14 +2,20 @@
 
 namespace App\Http\Controllers;
 
+<<<<<<< HEAD
 use Illuminate\Support\Facades\DB;
 
 use App\Models\Students;
 use App\Models\Course;
+=======
+use DB;
+
+>>>>>>> 6c63ac9ae85471de6d30031f1b82958acc553f63
 use Illuminate\Http\Request;
 
 class StudentController extends Controller
 {
+<<<<<<< HEAD
     // public function user_course()
     // {
     //     $course = Course::query()
@@ -60,4 +66,13 @@ class StudentController extends Controller
 
     //     return view('user_dashboard', compact('course'));
     // }
+=======
+    public function index()
+    {
+        $total_students = DB::select("SELECT COUNT(*) AS total FROM students");
+        $students=DB::select("SELECT student_id, last_name, first_name, year_level, date_enrolled  FROM students ORDER BY last_name LIMIT 10");
+
+        return view('students', compact('total_students', 'students'));
+    }
+>>>>>>> 6c63ac9ae85471de6d30031f1b82958acc553f63
 }

@@ -36,19 +36,31 @@
     <th>Room</th>
     <th>Schedule</th>
     <th>Professor</th>
+<<<<<<< HEAD
 
   </tr>
   @foreach($subjects as $s)
+=======
+  </tr>
+  @foreach ( $subjects as $s )
+>>>>>>> 6c63ac9ae85471de6d30031f1b82958acc553f63
   <tr>
         <td>{{$s->name}}</td>
         <td>{{$s->room}}</td>
         <td>{{$s->schedule}}</td>
         <td>{{$s->last_name}} , {{$s->first_name}}</td>
+<<<<<<< HEAD
     
   </tr>
   @endforeach
 </table>
 {{-- {{$subjects -> links('pagination::bootstrap-5')}} --}}
+=======
+  </tr>
+  @endforeach
+</table>
+{{$subjects -> links('pagination::bootstrap-5')}}
+>>>>>>> 6c63ac9ae85471de6d30031f1b82958acc553f63
 
     <div class="col-lg-3 todo-items" id="todo">
         <h3>To-Do List</h3>

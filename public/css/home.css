@@ -1,11 +1,27 @@
 body {
+<<<<<<< HEAD
     font-family: "font-family: 'Lato', sans-serif";
+=======
+<<<<<<< HEAD
+    font-family: "font-family: 'Lato', sans-serif";
+=======
+    font-family: "Open Sans", Arial, sans-serif;
+>>>>>>> 84dc88db7d360e83b1e3d2b3704df0ceaa1966d1
+>>>>>>> 6c63ac9ae85471de6d30031f1b82958acc553f63
 }
 #first_nav {
     padding: 0px;
     margin: 0px;
     padding-left: 20px;
+<<<<<<< HEAD
     /* font-family: "Open Sans", Arial, sans-serif; */
+=======
+<<<<<<< HEAD
+    /* font-family: "Open Sans", Arial, sans-serif; */
+=======
+    font-family: "Open Sans", Arial, sans-serif;
+>>>>>>> 84dc88db7d360e83b1e3d2b3704df0ceaa1966d1
+>>>>>>> 6c63ac9ae85471de6d30031f1b82958acc553f63
     font-size: 12px;
     color: #e6e6e6;
     line-height: 1.7em;
@@ -15,7 +31,10 @@ body {
 #color_nav {
     background-color: maroon;
     padding: 4px;
+<<<<<<< HEAD
     margin: 0%;
+=======
+>>>>>>> 6c63ac9ae85471de6d30031f1b82958acc553f63
 }
 #top_email {
     color: white;
@@ -25,7 +44,15 @@ body {
 #call {
     width: 18px;
     margin: 0px;
+<<<<<<< HEAD
     /* font-family: "Open Sans", Arial, sans-serif; */
+=======
+<<<<<<< HEAD
+    /* font-family: "Open Sans", Arial, sans-serif; */
+=======
+    font-family: "Open Sans", Arial, sans-serif;
+>>>>>>> 84dc88db7d360e83b1e3d2b3704df0ceaa1966d1
+>>>>>>> 6c63ac9ae85471de6d30031f1b82958acc553f63
     padding: 0px;
 }
 #mail {
@@ -45,8 +72,19 @@ body {
 }
 #logo2 {
     width: 20%;
+<<<<<<< HEAD
     padding-top: 50px;
     margin-left: 39%;
+=======
+<<<<<<< HEAD
+    padding-top: 50px;
+    margin-left: 39%;
+
+=======
+    margin: 0px;
+    padding: 0px;
+>>>>>>> 84dc88db7d360e83b1e3d2b3704df0ceaa1966d1
+>>>>>>> 6c63ac9ae85471de6d30031f1b82958acc553f63
 }
 #logo {
     width: 210px;
@@ -57,6 +95,10 @@ body {
     /* display: flex; */
     justify-content: right;
     padding: 0px;
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+>>>>>>> 6c63ac9ae85471de6d30031f1b82958acc553f63
 }
 
 #prog_drop {
@@ -65,6 +107,12 @@ body {
 
 #prog_drop:hover {
     color: maroon;
+<<<<<<< HEAD
+=======
+
+=======
+>>>>>>> 84dc88db7d360e83b1e3d2b3704df0ceaa1966d1
+>>>>>>> 6c63ac9ae85471de6d30031f1b82958acc553f63
 }
 .nav-item {
     padding: 0px 20px 0px 0px;

@@ -58,6 +58,13 @@ p{
     margin-left: 220px;
 }
 
+<<<<<<< HEAD
+=======
+.logout {
+
+}
+
+>>>>>>> 6c63ac9ae85471de6d30031f1b82958acc553f63
 @media only screen and (max-width: 768px) {
     .sidebar {
         width: 100%;
