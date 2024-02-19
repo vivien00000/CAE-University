@@ -13,6 +13,10 @@
     <div class="container mt-4">
         <div class="card">
             <div class="card-body">
+<<<<<<< HEAD
+=======
+                <h1 class="card-title">My Profile</h1>
+>>>>>>> b595f56fb1480697710a208ad54909626abd0c94
 
                 <!-- Profile Picture -->
                 {{-- <div class="text-center">
@@ -114,7 +118,11 @@
                             <th>Room</th>
                         </tr>
                     </thead>
+<<<<<<< HEAD
                     <tbody>m
+=======
+                    <tbody>
+>>>>>>> b595f56fb1480697710a208ad54909626abd0c94
                         @foreach ($classes as $c)
                         <tr>
                             <td>{{$c -> class_id}}</td>
@@ -129,7 +137,11 @@
         </div>
     </div> --}}
 
+<<<<<<< HEAD
     <div class="col-lg-3 todo-items" id="todo">
+=======
+    <div class="col-lg-3 todo-items" id="todo"> <!-- Take up 3 columns for the To-Do items -->
+>>>>>>> b595f56fb1480697710a208ad54909626abd0c94
         <h3>To-Do List</h3>
         <ul class="list-group">
             <li class="list-group-item">Nothing to show</li>

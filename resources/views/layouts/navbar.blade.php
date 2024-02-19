@@ -119,7 +119,15 @@
                     </a>
                     <ul class="dropdown-menu" id="prog_drop">
                         <li>
+<<<<<<< HEAD
                             <a class="dropdown-item" href="/cs">Computer Sciences</a>
+=======
+<<<<<<< HEAD
+                            <a class="dropdown-item" href="/cs">Computer Sciences</a>
+=======
+                            <a class="dropdown-item" href="#">Computer Sciences</a>
+>>>>>>> 6c63ac9ae85471de6d30031f1b82958acc553f63
+>>>>>>> b595f56fb1480697710a208ad54909626abd0c94
                         </li>
                         <li>
                             <a class="dropdown-item" href="#"

@@ -5,6 +5,10 @@
    <link rel="stylesheet" href="css/user_page.css">
    <link rel="stylesheet" href="css/calendar.css">
     <script src="js/calendar.js"></script>
+   <style>
+       /* Adjustments for fixed position on the right side */
+
+   </style>
 </head>
 <body>
     @include('layouts/left_navbar')
@@ -12,11 +16,7 @@
 
     <div class="container" id="card_container">
         <div class="row" id="text">
-<<<<<<< HEAD
-            <div class="col-lg-12">
-=======
             <div class="col-lg-9">
->>>>>>> b595f56fb1480697710a208ad54909626abd0c94
                 <h1>Dashboard</h1>
                 <hr>
                         <div class="row">
@@ -77,14 +77,15 @@
 
                             </div>
 
-    <div class="col-lg-3 todo-items" id="todo"> <!-- Take up 3 columns for the To-Do items -->
-        <h3>To-Do List</h3>
-        <ul class="list-group">
-            <li class="list-group-item">Nothing to show</li>
-            <li class="list-group-item">Recent Feedback</li>
-        </ul>
-        <button type="button" class="btn btn-primary mt-3">View Grades</button>
+            <div class="col-lg-3 todo-items" id="todo"> <!-- Take up 3 columns for the To-Do items -->
+                <h3>To-Do List</h3>
+                <ul class="list-group">
+                    <li class="list-group-item">Nothing to show</li>
+                    <li class="list-group-item">Recent Feedback</li>
+                </ul>
+                <button type="button" class="btn btn-primary mt-3">View Grades</button>
+            </div>
+        </div>
     </div>
-</div>
 </body>
 </html>

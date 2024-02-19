@@ -59,7 +59,12 @@
 </nav>
 <nav class="img-fluid">
     <div class="container-fluid">
+<<<<<<< HEAD
         <a href="/"><span><img src="img/caeLogo.png" alt="logo" id="logo2"/></span></a>
+=======
+        <img src="img/caeLogo.png" alt="logo" id="logo2"
+        />
+>>>>>>> b595f56fb1480697710a208ad54909626abd0c94
 </nav>
 <div class="container-fluid" id="login_form_container">
     <div class="row">

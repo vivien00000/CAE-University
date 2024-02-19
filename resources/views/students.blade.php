@@ -8,6 +8,7 @@
 
 </head>
 <body>
+<<<<<<< HEAD
     <h5 id="std-text"><b>Students List</b>    <a href="/students/create"><i class=" fa fa-plus-circle" title="Add"></i></a> <a href="/students/report"><i class=" fa fa-file" title="Generate Report"></i> </a> </h5>
     <p id="std-count">Total Students: {{$total_students[0] -> total}}</p>
     <div class="container mt-5" id="conts">
@@ -36,15 +37,25 @@
     </div>
 
     <div class="card mt-2">
+=======
+    <h5 id="std-text"><b>Students List</b></h5>
+    <p id="std-count">Total Students: {{$total_students[0]->total}}</p>
+    <div class="card">
+>>>>>>> b595f56fb1480697710a208ad54909626abd0c94
         <div class="card-body">
             <table class="table">
                 <thead>
                     <tr>
                         <th><input type="checkbox" id="masterCheckbox" onchange="toggleCheckboxes()"></th>
                         <th>Student ID</th>
+<<<<<<< HEAD
                         <th>Name</th>
                         <th>Year Level</th>
                         <th>Email Address</th>
+=======
+                        <th>Last Name</th>
+                        <th>First Name</th>
+>>>>>>> b595f56fb1480697710a208ad54909626abd0c94
                         <th>Date Enrolled</th>
                         <th>Action</th>
                     </tr>
@@ -52,6 +63,7 @@
                 <tbody>
                     @foreach ($students as $s)
                     <tr>
+<<<<<<< HEAD
                         <td><input type="checkbox" name="student_ids[]" value="{{ $s -> student_id }}"></td>
                         <td>{{ $s -> student_id }}</td>
                         <td>{{ $s -> last_name }} , {{ $s -> first_name }} </td>
@@ -66,6 +78,29 @@
                                 <a href="/students/edit/{{$s -> student_id}}"><i class="fas fa-edit"  title="Edit"></i></a>
                                 <button type="submit" style="border: none; color: red;  padding-right: -50%; margin: 0;"> <i class="fas fa-trash-alt" title="Delete"></i>
                                 </button>
+=======
+                        <td><input type="checkbox" name="student_ids[]" value="{{ $s->student_id }}"></td>
+                        <td>{{ $s->student_id }}</td>
+                        <td>{{ $s->last_name }}</td>
+                        <td>{{ $s->first_name }}</td>
+                        <td>{{ $s->date_enrolled }}</td>
+                        <td class="action-icons">
+<<<<<<< HEAD
+                            <a href="/profile"><i class="fas fa-eye" title="View"></i></a>
+                            <a href="/edit"><i class="fas fa-edit" title="Edit"></i></a>
+                            <a href="/delete"><i class="fas fa-trash-alt" title="Delete"></i></a>
+=======
+<<<<<<< HEAD
+                            <a href="/profile"><i class="fas fa-eye" title="View"></i></a>
+                            <a href="/edit"><i class="fas fa-edit" title="Edit"></i></a>
+                            <a href="/delete"><i class="fas fa-trash-alt" title="Delete"></i></a>
+=======
+                            <a href="#"><i class="fas fa-eye" title="View"></i></a>
+                            <a href="#"><i class="fas fa-edit" title="Edit"></i></a>
+                            <a href="#"><i class="fas fa-trash-alt" title="Delete"></i></a>
+>>>>>>> f204c4ec4a3d4b01d4745850a2b9de88a0469186
+>>>>>>> 6c63ac9ae85471de6d30031f1b82958acc553f63
+>>>>>>> b595f56fb1480697710a208ad54909626abd0c94
                         </td>
                     </tr>
                     @endforeach

@@ -3,7 +3,11 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
+<<<<<<< HEAD
 use App\Models\Product;
+=======
+use App\Models\Products;
+>>>>>>> b595f56fb1480697710a208ad54909626abd0c94
 use App\Models\Order;
 use App\Models\OrdersProduct;
 use App\Models\Notification;
@@ -12,6 +16,7 @@ use Illuminate\Support\Facades\Session;
 
 class OrderController extends Controller
 {
+<<<<<<< HEAD
     public function cancel_order(string $id)
     {
         $orders = Order::query()
@@ -295,3 +300,27 @@ class OrderController extends Controller
 //         return view('user_merch', compact('product'));
 //     }
 // }
+=======
+
+    public function index_product()
+    {
+        $product = Products::query()
+            ->select('*')
+            ->get();
+
+        return view('user_merch', compact('product'));
+    }
+    // public function view_orders()
+    // {
+    //     $orders = Order::query()
+    //         ->select('*')
+    //         ->where('user_id', '=', Session::get('user_id'))
+    //         ->orderBy('time_placed', 'DESC')
+    //         ->get();
+
+    //     return view('user_merch', compact('orders'));
+    // }
+
+
+}
+>>>>>>> b595f56fb1480697710a208ad54909626abd0c94

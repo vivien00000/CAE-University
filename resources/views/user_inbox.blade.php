@@ -10,6 +10,10 @@
     @include('layouts/left_navbar')
     @include('layouts/calendar')
 
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+>>>>>>> b595f56fb1480697710a208ad54909626abd0c94
     <style>
         body {
             font-family: Arial, sans-serif;
@@ -38,10 +42,19 @@
         th {
             background-color: #f2f2f2;
         }
+<<<<<<< HEAD
     </style>
     </head>
     <body>
 
+=======
+        
+    </style>
+    </head>
+    <body>
+<div class="container">
+    <div class="row">
+>>>>>>> b595f56fb1480697710a208ad54909626abd0c94
     <div class="card">
         <table>
             <tr>
@@ -58,7 +71,14 @@
             </tr>
         </table>
     </div>
+<<<<<<< HEAD
 
+=======
+</div>
+</div>
+=======
+>>>>>>> 6c63ac9ae85471de6d30031f1b82958acc553f63
+>>>>>>> b595f56fb1480697710a208ad54909626abd0c94
     <div class="col-lg-3 todo-items" id="todo"> <!-- Take up 3 columns for the To-Do items -->
         <h3>To-Do List</h3>
         <ul class="list-group">

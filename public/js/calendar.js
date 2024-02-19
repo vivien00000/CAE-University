@@ -1,3 +1,72 @@
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+>>>>>>> 6c63ac9ae85471de6d30031f1b82958acc553f63
+>>>>>>> b595f56fb1480697710a208ad54909626abd0c94
+$(document).ready(function () {
+    var date = new Date();
+    var currentMonth = date.getMonth();
+    var currentYear = date.getFullYear();
+    var months = [
+        "January",
+        "February",
+        "March",
+        "April",
+        "May",
+        "June",
+        "July",
+        "August",
+        "September",
+        "October",
+        "November",
+        "December",
+    ];
+
+    function generateCalendar(month, year) {
+        var daysInMonth = new Date(year, month + 1, 0).getDate();
+        var firstDayOfMonth = new Date(year, month, 1).getDay();
+        var $calendarDays = $(".calendar-days");
+        $calendarDays.empty();
+        $("#currentMonth").text(months[month] + " " + year);
+
+        for (var i = 0; i < firstDayOfMonth; i++) {
+            $calendarDays.append("<div></div>");
+        }
+
+        for (var day = 1; day <= daysInMonth; day++) {
+            $calendarDays.append("<div>" + day + "</div>");
+        }
+    }
+
+    generateCalendar(currentMonth, currentYear);
+
+    $("#prevMonth").click(function () {
+        currentMonth--;
+        if (currentMonth < 0) {
+            currentMonth = 11;
+            currentYear--;
+        }
+        generateCalendar(currentMonth, currentYear);
+    });
+
+    $("#nextMonth").click(function () {
+        currentMonth++;
+        if (currentMonth > 11) {
+            currentMonth = 0;
+            currentYear++;
+        }
+        generateCalendar(currentMonth, currentYear);
+    });
+<<<<<<< HEAD
+});
+=======
+<<<<<<< HEAD
+});
+=======
+});
+=======
 $(document).ready(function () {
     var date = new Date();
     var currentMonth = date.getMonth();
@@ -53,3 +122,6 @@ $(document).ready(function () {
         generateCalendar(currentMonth, currentYear);
     });
 });
+>>>>>>> 84dc88db7d360e83b1e3d2b3704df0ceaa1966d1
+>>>>>>> 6c63ac9ae85471de6d30031f1b82958acc553f63
+>>>>>>> b595f56fb1480697710a208ad54909626abd0c94

@@ -5,7 +5,11 @@
 }
 #std-text {
     padding-left: 220px;
+<<<<<<< HEAD
     padding-top: 2%;
+=======
+    padding-top: 20%;
+>>>>>>> b595f56fb1480697710a208ad54909626abd0c94
     color: black;
     font-size: large;
     margin-top: -10px;
@@ -54,6 +58,7 @@ p{
 
     /* Table */
 .card {
+<<<<<<< HEAD
     width: 80%;
     margin-left: 220px;
 }
@@ -61,6 +66,19 @@ p{
 #conts{
     margin-left: 58%;
 }
+=======
+    width: 60%;
+    margin-left: 220px;
+}
+
+<<<<<<< HEAD
+=======
+.logout {
+
+}
+
+>>>>>>> 6c63ac9ae85471de6d30031f1b82958acc553f63
+>>>>>>> b595f56fb1480697710a208ad54909626abd0c94
 @media only screen and (max-width: 768px) {
     .sidebar {
         width: 100%;

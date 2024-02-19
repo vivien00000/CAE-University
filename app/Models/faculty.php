@@ -2,6 +2,7 @@
 
 namespace App\Models;
 
+<<<<<<< HEAD
 use Carbon\Carbon;
 use Illuminate\Database\Eloquent\Model;
 
@@ -43,4 +44,12 @@ use Illuminate\Database\Eloquent\Model;
 		'position',
 		'department'
 	];
+=======
+use Illuminate\Database\Eloquent\Factories\HasFactory;
+use Illuminate\Database\Eloquent\Model;
+
+class faculty extends Model
+{
+    use HasFactory;
+>>>>>>> b595f56fb1480697710a208ad54909626abd0c94
 }

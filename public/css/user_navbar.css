@@ -76,6 +76,15 @@ body #login_form_container {
     display: none !important;
 }
 
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+=======
+.dropdown-menu {
+    display: 
+}
+>>>>>>> 6c63ac9ae85471de6d30031f1b82958acc553f63
+>>>>>>> b595f56fb1480697710a208ad54909626abd0c94
 .notification {
   position: relative;
   display: inline-block;
@@ -124,4 +133,12 @@ body #login_form_container {
   position: absolute;
   top: -8px;
   right: -8px;
+<<<<<<< HEAD
 }
+=======
+<<<<<<< HEAD
+}
+=======
+}
+>>>>>>> 6c63ac9ae85471de6d30031f1b82958acc553f63
+>>>>>>> b595f56fb1480697710a208ad54909626abd0c94

@@ -12,7 +12,11 @@
 
 <style>
     table {
+<<<<<<< HEAD
         margin-top: 2%;
+=======
+        margin-top: 10%;
+>>>>>>> b595f56fb1480697710a208ad54909626abd0c94
         margin-left: 8%;
         width: 65%;
         border-collapse: collapse;
@@ -25,6 +29,7 @@
     th {
         background-color: #f2f2f2;
     }
+<<<<<<< HEAD
     #buton {
         padding: 9px;
         font-size: 90%;
@@ -63,22 +68,55 @@
 </div>
 </form>
 </div>
+=======
+</style>
+</head>
+<body>
+
+
+>>>>>>> b595f56fb1480697710a208ad54909626abd0c94
 <table>
   <tr>
     <th>Course</th>
     <th>Room</th>
     <th>Schedule</th>
     <th>Professor</th>
+<<<<<<< HEAD
   </tr>
   @foreach ( $subjects as $s )
+=======
+<<<<<<< HEAD
+
+  </tr>
+  @foreach($subjects as $s)
+=======
+  </tr>
+  @foreach ( $subjects as $s )
+>>>>>>> 6c63ac9ae85471de6d30031f1b82958acc553f63
+>>>>>>> b595f56fb1480697710a208ad54909626abd0c94
   <tr>
         <td>{{$s->name}}</td>
         <td>{{$s->room}}</td>
         <td>{{$s->schedule}}</td>
         <td>{{$s->last_name}} , {{$s->first_name}}</td>
+<<<<<<< HEAD
   </tr>
   @endforeach
 </table>
+=======
+<<<<<<< HEAD
+    
+  </tr>
+  @endforeach
+</table>
+{{-- {{$subjects -> links('pagination::bootstrap-5')}} --}}
+=======
+  </tr>
+  @endforeach
+</table>
+{{$subjects -> links('pagination::bootstrap-5')}}
+>>>>>>> 6c63ac9ae85471de6d30031f1b82958acc553f63
+>>>>>>> b595f56fb1480697710a208ad54909626abd0c94
 
     <div class="col-lg-3 todo-items" id="todo">
         <h3>To-Do List</h3>

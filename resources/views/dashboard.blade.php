@@ -1,15 +1,17 @@
 <!DOCTYPE html>
-<html lang="en">
 <<<<<<< HEAD
+<!DOCTYPE html>
+<html lang="en">
 
 =======
->>>>>>> b595f56fb1480697710a208ad54909626abd0c94
+<html lang="en">
+>>>>>>> f204c4ec4a3d4b01d4745850a2b9de88a0469186
 <head>
     @include('layouts/admin_navbar')
     <script src="js/admin.js"></script>
     <link rel="stylesheet" href="css/admin.css"/>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
 <<<<<<< HEAD
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
     <title>Admin Dashboard</title>
 </head>
 
@@ -47,9 +49,10 @@
         }
     });
 </script>
-</html>
 =======
-
 </head>
 <body>
->>>>>>> b595f56fb1480697710a208ad54909626abd0c94
+
+</body>
+>>>>>>> f204c4ec4a3d4b01d4745850a2b9de88a0469186
+</html>

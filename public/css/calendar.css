@@ -3,7 +3,11 @@
     border: 3% solid black;
     padding: 1%;
     position: fixed;
+<<<<<<< HEAD
     top: 10%;
+=======
+    top: 45%;
+>>>>>>> b595f56fb1480697710a208ad54909626abd0c94
     right: 2%;
     background-color: white;
     z-index: 999;
