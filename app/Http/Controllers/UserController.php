@@ -3,12 +3,7 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
-
 use App\Models\User;
-use App\Models\Student;
-use App\Models\StudentsPhoto;
-use App\Models\Notification;
-
 use Illuminate\Support\Facades\Hash;
 use Illuminate\Support\Facades\Session;
 
@@ -16,34 +11,76 @@ use DB;
 
 class UserController extends Controller
 {
-public function login(Request $r)
+
+    public function show_dashboard()
     {
-        $user = User::where("email", "=", $r->email)
+        $students = Students::query()
+            ->select(DB::raw('COUNT(*) AS stud_count'))
+            ->groupBy('year_level')
+            ->get();
+
+        $entries = [];
+        foreach ($students as $s) {
+            array_push($entries, $s->stud_count);
+        }
+
+        $data = [
+            'labels' => ['1st Year', '2nd Year', '3rd Year', '4th Year'],
+            'data' => $entries,
+        ];
+
+        return view('admin_dashboard', compact('data'));
+    }
+
+    public function logout()
+    {
+        if (Session::has('user_id')) {
+            Session::flush();
+        }
+
+        return redirect('user_login');
+    }
+
+    public function login(Request $r)
+    {
+        // User::where("user_id", "=", 1602)
+        //     ->update(
+        //         [
+        //             'password' => Hash::make("1234")
+        //         ]
+        //         );
+        //         return "1";
+
+        $user = User::where("email_address", "=", $r->email_address)
             ->first();
 
+        // return $user;
+
         if ($user) {
-            if (Hash::check($r->pw, $user->password)) {
+            if (Hash::check($r->password, $user->password)) {
                 Session::put('user_id', $user->user_id);
                 Session::put('first_name', $user->first_name);
                 Session::put('last_name', $user->last_name);
-                Session::put('email', $user->email);
+                Session::put('email', $user->email_adress);
                 Session::put('role', $user->role);
                 Session::put('student_id', $user->student_id);
                 if (Session::get('role') == 'admin') {
-                    return redirect('/admin/students')->with('success', 'Logged in as admin!');
+                    return redirect('/students')->with('success', 'Logged in as admin!');
                 } else if (Session::get('role') == 'user') {
-                    return redirect('/profile')->with('success', 'Welcome, ' . Session::get('first_name') . '!');
+                    return redirect('/user_dashboard')->with('success', 'Welcome, ' . Session::get('first_name') . '!');
                 }
             } else {
-                return redirect('/login')->with('fail', 'Incorrect password.');
+                return redirect('/user_login')->with('fail', 'Incorrect password.');
             }
         } else {
-            return redirect('/login')->with('fail', 'An account with that email does not exist.');
+            return redirect('/user_login')->with('fail', 'An account with that email does not exist.');
         }
     }
 
-    public function show_login()
+    public function user_login()
     {
-        return view('login');
+        return view('user_dashboard');
     }
-  }
+}
+
+

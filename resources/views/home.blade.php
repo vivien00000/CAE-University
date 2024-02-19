@@ -13,7 +13,7 @@
         <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel">
             <div class="carousel-inner">
               <div class="carousel-item active">
-                  <img src="img/ama_carou.webp" class="d-block w-50 p-5" alt="ama_carou.webp">
+                  <img src="img/online.jpg" class="d-block w-50 p-5" alt="ama_carou.webp">
                   <div class="carousel-caption d-none d-md-block">
                     <h1 class="carou_text">CAE Basic Education</h2>
                    <h3 class="carou_text2"> Online learning for a better education.</h3>
@@ -56,9 +56,6 @@
           </div>
 
 
-
-
-      
         {{-- about section --}}
         <nav class="navbar bg-body-tertiary" id="about_section">
             <div class="container-fluid">
@@ -84,7 +81,7 @@
                         Ipsa dignissimos explicabo voluptas perspiciatis fugiat
                         numquam quod ea quis eius doloremque.
                     </p>
-                 
+
                 </div>
                 <div class="col-lg-3">
                     <img src="img/vission.webp" alt="icons2" class="about2ndline"/>
@@ -105,7 +102,7 @@
             </div>
         </div>
          <!-- space -->
-    <div class="d-flex" style="height: 83px">
+    <div class="d-flex" style="height: 10px">
         <div class="vr"></div>
       </div>
         {{-- programs offered --}}
@@ -124,38 +121,15 @@
                  <img src="img/BS2.jpg" alt="icon" class="offered" />
                     <h3 class="collegeof">College of Engineering</h3>
                 </div>
-                <div class="col-lg-4">    
+                <div class="col-lg-4">
                 <img src="img/BS3.jpg" alt="icon" class="offered" />
                     <h3 class="collegeof">College of Business Administration</h3>
             </div>
             </div>
         </div>
 
-        {{-- NEWS --}}
-
-        {{-- <div class="container-fluid">
-            <div class="row\" id="news">
-                <div class="col-lg-5">
-                    <img src="img/news.png" alt="icon" />
-                </div>
-                <div class="col-lg-3 py-5">
-                    <img src="img/news2.png" alt="icon" />
-                </div>
-            </div>
-        </div> --}}
-
-        {{-- pre-reg --}}
-
-        {{-- <div class="container-fluid" id="preregister">
-            <div class="row">
-                <div class="col-lg-12">
-                    <img src="img/pre_register.png" alt="pics" />
-                </div>
-            </div>
-        </div> --}}
-
         {{-- footer --}}
 @include('layouts/footer')
-       
+
     </body>
 </html>

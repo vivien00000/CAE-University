@@ -1,18 +1,20 @@
 .container {
-    text-align: center;
-    padding-left: 10%;
+    margin-left: 7%;
+    padding-top: -20px;
+    width: 70%;
+}
+
+#text {
+    margin-top: 30px;
 }
 
 /* Styling for card titles */
 .card-title {
-    color: #333;
-    font-size: 24px;
-}
-
-/* Styling for card text */
-.card-text {
     color: #666;
     font-size: 16px;
+}
+.row {
+    padding-bottom: 2%;
 }
 
 /* Styling for card buttons */
@@ -30,27 +32,56 @@
 .btn:hover {
     background-color: #0056b3;
 }
-
 /* Styling for card images */
-.card-img-top,
-.card-img-bottom {
-    border-radius: 5px 5px 0 0;
+.card-img-top {
+    width: 100%;
+    height: 100%;
 }
 
 /* Additional card styles */
 .card {
-    margin-bottom: 20px;
+    margin-bottom: 10px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    transition: box-shadow 0.3s ease;
+    transition: box-shadow 0.4s ease;
 }
 
 .card:hover {
-    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    box-shadow: 0 8px 16px maroon;
 }
 #href {
     color: black;
 }
 
 #card_container {
-    margin-top: 6%;
+    margin-left: 7%;
+}
+
+#todo {
+    padding-top: 90px;
+    margin-top: 18%;
+    margin-right: 2%;
+}
+.todo-items {
+    position: fixed;
+    top: 50px;
+    right: 20px;
+    width: 300px; /* Adjust width as needed */
+}
+
+/* Additional CSS for responsiveness */
+.col-lg-3 {
+    flex: 0 0 100%; /* Ensures each column takes up full width on small screens */
+    max-width: 100%;
+}
+@media (min-width: 576px) {
+    .col-lg-3 {
+        flex: 0 0 50%; /* Two columns on medium screens */
+        max-width: 50%;
+    }
+}
+@media (min-width: 768px) {
+    .col-lg-3 {
+        flex: 0 0 33.333333%; /* Three columns on large screens */
+        max-width: 33.333333%;
+    }
 }

@@ -1,0 +1,48 @@
+#about_page {
+    background-color: rgb(238, 234, 234);
+    padding: 0px;
+}
+#university {
+    width: 50%;
+    padding: 10px;
+}
+
+#h1-text {
+    font-size: xx-large;
+    padding-top: 20px;
+    color: maroon;
+}
+
+#h2-text {
+    padding-top: 30px;
+    text-transform: capitalize;
+    color: maroon;
+}
+.container-fluid {
+    text-align: center;
+    margin: auto;
+    width: 80%;
+
+}
+.reasons-container {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 50px;
+    padding-inline-start: 10%;
+}
+.reasons {
+    width: 45%;
+    text-align: left;
+}
+.reasons img {
+    max-width: 80%;
+    height: auto;
+    border-radius: 2%;
+}
+.cae-container {
+    text-align: center;
+    margin-top: 20px;
+    padding-bottom: 10px;
+    padding-inline: 10%;
+
+}
